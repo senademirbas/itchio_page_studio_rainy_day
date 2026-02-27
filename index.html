@@ -3,112 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lydia Was Here – Test</title>
+    <title>Studio Rainy Day - Static Layout</title>
+    <style>
+        body {
+            background-color: #2b2b2b;
+            margin: 0;
+            padding: 20px;
+            font-family: monospace;
+            overflow: auto;
+        }
 
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+        #game-container {
+            width: 4000px;
+            height: 5000px;
+            background-color: #1a1a1a;
+            position: relative;
+            margin: 0 auto;
+            /* Sınır çizgisini dilersen kaldırabilirsin */
+            border: 2px dashed #ffe600; 
+        }
 
-    <link rel="stylesheet" href="style.css">
+        /* Konumlandırmanın çalışması için resimlerin absolute olması şart */
+        #game-container img {
+            position: absolute;
+            user-select: none; /* Resimlerin seçilip mavi olmasını engeller */
+            pointer-events: none; /* Resimlere tıklanmasını/sürüklenmesini engeller */
+        }
+    </style>
 </head>
-
 <body>
-    <div class="inner_column">
-        <div class="custom-lydia-wrapper">
 
-            <img class="custom-lydia-bg"
-                 src="https://img.itch.zone/aW1nLzI0NjMzMjg1LnBuZw==/original/VirxC3.png">
+    <div id="game-container">
+        
+        <img src="https://img.itch.zone/aW1nLzI0OTU2MTI5LnBuZw==/original/K5UodT.png" id="base_bg" style="top: 46px; left: 1207px; z-index: 15;">
+        
+        <img src="https://img.itch.zone/aW1nLzI0OTU2MTM2LnBuZw==/original/y47ImX.png" id="black_paper" style="top: 222px; left: 1354px; z-index: 16;">
+        
+        <img src="https://img.itch.zone/aW1nLzI0OTU2MDM4LnBuZw==/original/8CJxLP.png" id="logo_bunny" style="top: 391px; left: 1531px; z-index: 25;">
+        
+        <img src="https://img.itch.zone/aW1nLzI0OTU2MDQxLnBuZw==/original/8zw9dm.png" id="team_header" style="top: 315px; left: 2226px; z-index: 39;">
+        
+        <img src="https://img.itch.zone/aW1nLzI0OTU2MDQ4LnBuZw==/original/Zyl0pP.png" id="upcoming_text" style="top: 1047px; left: 1902px; z-index: 34;">
 
-            <img class="custom-lydia-absolute custom-lydia-logo"
-                 src="https://img.itch.zone/aW1nLzI0NjMzMzAzLnBuZw==/original/GaCon5.png">
+        <img src="https://img.itch.zone/aW1nLzI0OTU1OTg3LnBuZw==/original/M7J8%2FN.png" id="team_member_1" style="top: 374px; left: 2337px; z-index: 38;">
+        
+        <img src="https://img.itch.zone/aW1nLzI0OTU1OTk4LnBuZw==/original/uCR9S5.png" id="team_member_2" style="top: 364px; left: 2556px; z-index: 37;">
+        
+        <img src="https://img.itch.zone/aW1nLzI0OTU2MDAxLnBuZw==/original/%2FvTZNR.png" id="team_member_3" style="top: 631px; left: 2347px; z-index: 36;">
 
-            <div class="custom-lydia-absolute custom-lydia-top-text">
-                You are back from the dead, but wait, hold on, who are you again?
-            </div>
+        <img src="https://img.itch.zone/aW1nLzI0OTU1OTk0LnBuZw==/original/uCR9S5.png" id="team_member_4" style="top: 364px; left: 2556px; z-index: 37;">
+        
+        <img src="https://img.itch.zone/aW1nLzI0OTU2MDAzLnBuZw==/original/YaG1RB.png" id="team_member_5" style="top: 625px; left: 2569px; z-index: 35;">
 
-            <div class="custom-lydia-absolute custom-lydia-desc-1">
-                <p style="margin-bottom:0.8em;">
-                    Lydia Was Here is a game about a botched resurrection,
-                    where you have to pretend to be someone you're pretty sure you're not.
-                </p>
-                <p>
-                    Navigate your friendships and protect your secret.
-                    Will you escape or embrace your new role?
-                </p>
-            </div>
+        <img src="https://img.itch.zone/aW1nLzI0OTU2MDMyLnBuZw==/original/dYZAfA.png" id="red_envelope" style="top: 980px; left: 1982px; z-index: 33;">
+        
+        <img src="https://img.itch.zone/aW1nLzI0OTU2MDI3LnBuZw==/original/lEHWUa.png" id="card_inner" style="top: 1286px; left: 1995px; z-index: 32;">
+        
+        <img src="https://img.itch.zone/aW1nLzI0OTU2MDE1LnBuZw==/original/dCH8v5.png" id="star_deco" style="top: 213px; left: 1483px; z-index: 24;">
 
-            <div class="custom-lydia-absolute custom-lydia-trailer-title">
-                <span class="custom-lydia-trailer-text">Trailer</span>
-            </div>
+        <img src="https://img.itch.zone/aW1nLzI0OTU2MDEyLnBuZw==/original/gcmHQe.png" id="bookmark_steam" style="top: 361px; left: 1932px; z-index: 23;">
+        
+        <img src="https://img.itch.zone/aW1nLzI0OTU2MDEzLnBuZw==/original/7P0fqp.png" id="bookmark_x" style="top: 362px; left: 2083px; z-index: 20;">
 
-            <img class="custom-lydia-absolute custom-lydia-screen-1"
-     src="https://img.itch.zone/aW1nLzI1MDczNTQ1LnBuZw==/original/vxfdP9.png">
-
-
-            <img class="custom-lydia-absolute custom-lydia-screen-2"
-     src="https://img.itch.zone/aW1nLzI1MDczNTQxLnBuZw==/original/yBIW2l.png">
-
-
-            <div class="custom-lydia-absolute custom-lydia-desc-2">
-                <p style="margin-bottom:0.8em;">
-                    Lydia Was Here is a game about a botched resurrection.
-                </p>
-                <p>
-                    Will you be able to escape,
-                    or will you embrace your new role?
-                </p>
-            </div>
-
-           <img class="custom-lydia-absolute custom-lydia-screen-3"
-     src="https://img.itch.zone/aW1nLzI1MDczNTM2LnBuZw==/original/WKDYYs.png">
-
-            <img class="custom-lydia-absolute custom-lydia-screen-4"
-     src="https://img.itch.zone/aW1nLzI1MDczNTMyLnBuZw==/original/6mY66V.png">
-
-
-            <img class="custom-lydia-absolute custom-lydia-bottom-img"
-                 src="https://img.itch.zone/aW1nLzI1NzkyMDE5LnBuZw==/original/QFNseV.png">
-
-            <div class="custom-lydia-absolute custom-lydia-features">
-
-    <div class="feature-col">
-        <h3>Fully Hand-Drawn Visuals</h3>
-        <p>Every asset is drawn by us!!!</p>
-
-        <h3>Psychological Horror Focused on Delusions</h3>
-        <p>
-            A horror rooted in silence, absence, and emotional
-            decay rather than jumpscares.
-        </p>
-
-        <h3>A Living Nightmare</h3>
-        <p>
-            Explore Lydia’s family home as your mind changes over time.
-        </p>
     </div>
 
-    <div class="feature-col">
-        <h3>Fragment of Reality</h3>
-        <p>
-            Navigate surreal dream spaces where environments
-            reflect Lydia’s mental state.
-        </p>
-
-        <h3>A Friend Group on the Edge</h3>
-        <p>
-            Experience the story through the perspectives of friends
-            struggling with guilt, denial, and the cost of resurrection.
-        </p>
-
-        <h3>Classic RPG Maker Exploration</h3>
-        <p>
-            Story driven gameplay with environmental storytelling,
-            and no combat.
-        </p>
-    </div>
-
-</div>
-
-
-        </div>
-    </div>
 </body>
 </html>
