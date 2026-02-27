@@ -1,71 +1,82 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studio Rainy Day - Static Layout</title>
-    <style>
-        body {
-            background-color: #2b2b2b;
-            margin: 0;
-            padding: 20px;
-            font-family: monospace;
-            overflow: auto;
-        }
+<div class="custom-studio-wrapper">
+    <!-- ARKA PLANLAR -->
+    <img class="custom-studio-absolute custom-studio-base-bg"
+        src="https://img.itch.zone/aW1nLzI0OTU2MTI5LnBuZw==/original/K5UodT.png">
+    <img class="custom-studio-absolute custom-studio-black-paper"
+        src="https://img.itch.zone/aW1nLzI0OTU2MTM2LnBuZw==/original/y47ImX.png">
 
-        #game-container {
-            width: 4000px;
-            height: 5000px;
-            background-color: #1a1a1a;
-            position: relative;
-            margin: 0 auto;
-            /* Sınır çizgisini dilersen kaldırabilirsin */
-            border: 2px dashed #ffe600; 
-        }
+    <!-- LOGO  -->
+    <a href="#" target="_blank" class="custom-studio-absolute custom-studio-logo-bunny">
+        <img src="https://img.itch.zone/aW1nLzI0OTU2MDM4LnBuZw==/original/8CJxLP.png"
+            style="width: 100%; display: block;">
+    </a>
 
-        /* Konumlandırmanın çalışması için resimlerin absolute olması şart */
-        #game-container img {
-            position: absolute;
-            user-select: none; /* Resimlerin seçilip mavi olmasını engeller */
-            pointer-events: none; /* Resimlere tıklanmasını/sürüklenmesini engeller */
-        }
-    </style>
-</head>
-<body>
-
-    <div id="game-container">
-        
-        <img src="https://img.itch.zone/aW1nLzI0OTU2MTI5LnBuZw==/original/K5UodT.png" id="base_bg" style="top: 46px; left: 1207px; z-index: 15;">
-        
-        <img src="https://img.itch.zone/aW1nLzI0OTU2MTM2LnBuZw==/original/y47ImX.png" id="black_paper" style="top: 222px; left: 1354px; z-index: 16;">
-        
-        <img src="https://img.itch.zone/aW1nLzI0OTU2MDM4LnBuZw==/original/8CJxLP.png" id="logo_bunny" style="top: 391px; left: 1531px; z-index: 25;">
-        
-        <img src="https://img.itch.zone/aW1nLzI0OTU2MDQxLnBuZw==/original/8zw9dm.png" id="team_header" style="top: 315px; left: 2226px; z-index: 39;">
-        
-        <img src="https://img.itch.zone/aW1nLzI0OTU2MDQ4LnBuZw==/original/Zyl0pP.png" id="upcoming_text" style="top: 1047px; left: 1902px; z-index: 34;">
-
-        <img src="https://img.itch.zone/aW1nLzI0OTU1OTg3LnBuZw==/original/M7J8%2FN.png" id="team_member_1" style="top: 374px; left: 2337px; z-index: 38;">
-        
-        <img src="https://img.itch.zone/aW1nLzI0OTU1OTk4LnBuZw==/original/uCR9S5.png" id="team_member_2" style="top: 364px; left: 2556px; z-index: 37;">
-        
-        <img src="https://img.itch.zone/aW1nLzI0OTU2MDAxLnBuZw==/original/%2FvTZNR.png" id="team_member_3" style="top: 631px; left: 2347px; z-index: 36;">
-
-        <img src="https://img.itch.zone/aW1nLzI0OTU1OTk0LnBuZw==/original/uCR9S5.png" id="team_member_4" style="top: 364px; left: 2556px; z-index: 37;">
-        
-        <img src="https://img.itch.zone/aW1nLzI0OTU2MDAzLnBuZw==/original/YaG1RB.png" id="team_member_5" style="top: 625px; left: 2569px; z-index: 35;">
-
-        <img src="https://img.itch.zone/aW1nLzI0OTU2MDMyLnBuZw==/original/dYZAfA.png" id="red_envelope" style="top: 980px; left: 1982px; z-index: 33;">
-        
-        <img src="https://img.itch.zone/aW1nLzI0OTU2MDI3LnBuZw==/original/lEHWUa.png" id="card_inner" style="top: 1286px; left: 1995px; z-index: 32;">
-        
-        <img src="https://img.itch.zone/aW1nLzI0OTU2MDE1LnBuZw==/original/dCH8v5.png" id="star_deco" style="top: 213px; left: 1483px; z-index: 24;">
-
-        <img src="https://img.itch.zone/aW1nLzI0OTU2MDEyLnBuZw==/original/gcmHQe.png" id="bookmark_steam" style="top: 361px; left: 1932px; z-index: 23;">
-        
-        <img src="https://img.itch.zone/aW1nLzI0OTU2MDEzLnBuZw==/original/7P0fqp.png" id="bookmark_x" style="top: 362px; left: 2083px; z-index: 20;">
-
+    <!-- AÇIKLAMA METNİ -->
+    <div class="custom-studio-absolute custom-studio-about-text">
+        Rainy Day is a studio<br>
+        that uses RPG Maker to<br>
+        make interactive stories<br>
+        about themes and<br>
+        emotions that inspire<br>
+        their art and fears that<br>
+        gnaw at their minds.
     </div>
 
-</body>
-</html>
+    <!-- EKİP BAŞLIKLARI -->
+    <img class="custom-studio-absolute custom-studio-team-header"
+        src="https://img.itch.zone/aW1nLzI0OTU2MDQxLnBuZw==/original/8zw9dm.png">
+    <img class="custom-studio-absolute custom-studio-upcoming-text"
+        src="https://img.itch.zone/aW1nLzI0OTU2MDQ4LnBuZw==/original/Zyl0pP.png">
+
+    <!-- EKİP ÜYELERİ (INSTAGRAM LİNKLİ VE ANİMASYONLU) -->
+    <a href="https://www.instagram.com/dotspeaker" target="_blank"
+        class="custom-studio-absolute custom-studio-team-member-1">
+        <img src="https://img.itch.zone/aW1nLzI0OTU1OTg3LnBuZw==/original/M7J8%2FN.png"
+            style="width: 100%; display: block;">
+    </a>
+    <a href="https://www.instagram.com/d0ds.png?igsh=MTM5Zndud2hjNnJjMw==" target="_blank"
+        class="custom-studio-absolute custom-studio-team-member-2">
+        <img src="https://img.itch.zone/aW1nLzI0OTU1OTk4LnBuZw==/original/uCR9S5.png"
+            style="width: 100%; display: block;">
+    </a>
+    <a href="https://www.instagram.com/777redhand/" target="_blank"
+        class="custom-studio-absolute custom-studio-team-member-3">
+        <img src="https://img.itch.zone/aW1nLzI0OTU2MDAxLnBuZw==/original/%2FvTZNR.png"
+            style="width: 100%; display: block;">
+    </a>
+    <a href="https://www.instagram.com/mspierot" target="_blank"
+        class="custom-studio-absolute custom-studio-team-member-4">
+        <img src="https://img.itch.zone/aW1nLzI0OTU1OTk0LnBuZw==/original/uCR9S5.png"
+            style="width: 100%; display: block;">
+    </a>
+    <a href="https://www.instagram.com/d0ds.png?igsh=MTM5Zndud2hjNnJjMw==" target="_blank"
+        class="custom-studio-absolute custom-studio-team-member-5">
+        <img src="https://img.itch.zone/aW1nLzI0OTU2MDAzLnBuZw==/original/YaG1RB.png"
+            style="width: 100%; display: block;">
+    </a>
+
+    <!-- OYUN KARTI (ZARF) VE İÇİNDEKİ YAZI -->
+    <!-- Zarf sabit kalıyor -->
+    <img class="custom-studio-absolute custom-studio-red-envelope"
+        src="https://img.itch.zone/aW1nLzI0OTU2MDMyLnBuZw==/original/dYZAfA.png">
+
+    <!-- İçindeki Yazı (Card Inner) Animasyonlu ve Tıklanabilir Yapıldı -->
+    <a href="#" target="_blank" class="custom-studio-absolute custom-studio-card-inner">
+        <img src="https://img.itch.zone/aW1nLzI0OTU2MDI3LnBuZw==/original/lEHWUa.png"
+            style="width: 100%; display: block;">
+    </a>
+
+    <!-- YILDIZ VE BOOKMARKLAR (STEAM/X LİNKLİ VE AŞAĞI KAYMA ANİMASYONLU) -->
+    <img class="custom-studio-absolute custom-studio-star-deco"
+        src="https://img.itch.zone/aW1nLzI0OTU2MDE1LnBuZw==/original/dCH8v5.png">
+
+    <a href="https://store.steampowered.com/curator/45888680/" target="_blank"
+        class="custom-studio-absolute custom-studio-bookmark-steam">
+        <img src="https://img.itch.zone/aW1nLzI0OTU2MDEyLnBuZw==/original/gcmHQe.png"
+            style="width: 100%; display: block;">
+    </a>
+    <a href="https://x.com/studiorainyday" target="_blank" class="custom-studio-absolute custom-studio-bookmark-x">
+        <img src="https://img.itch.zone/aW1nLzI0OTU2MDEzLnBuZw==/original/7P0fqp.png"
+            style="width: 100%; display: block;">
+    </a>
+</div>
