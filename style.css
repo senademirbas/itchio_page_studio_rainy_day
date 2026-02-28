@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
-/* --- 1. SIFIRLAMA --- */
 .inner_column {
     display: block !important;
     width: 100% !important;
     max-width: 100% !important;
     padding: 0 !important;
     margin: 0 auto !important;
-    overflow-x: hidden !important;
+    overflow-x: hidden !important
 }
 
 body,
@@ -15,10 +14,9 @@ html {
     overflow-x: hidden !important;
     margin: 0;
     padding: 0;
-    background-color: #000;
+    background-color: #000
 }
 
-/* --- 2. ANA TASARIM --- */
 .custom-studio-wrapper {
     position: relative;
     margin: 0 auto;
@@ -28,28 +26,27 @@ html {
     max-width: 100%;
     aspect-ratio: 1920 / 2111;
     container-type: inline-size;
-    overflow: hidden;
+    overflow: hidden
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
     .custom-studio-wrapper {
-        max-width: 100%;
+        max-width: 100%
     }
 }
 
 .custom-studio-absolute {
     position: absolute;
-    display: block;
+    display: block
 }
 
-/* --- 3. ELEMENT KONUMLARI VE DOĞRUDAN ANİMASYONLAR --- */
 .custom-studio-base-bg {
     top: 0.00%;
     left: 0.00%;
     width: 100.00%;
     z-index: 15;
     user-select: none;
-    pointer-events: none;
+    pointer-events: none
 }
 
 .custom-studio-black-paper {
@@ -58,10 +55,9 @@ html {
     width: 84.27%;
     z-index: 16;
     user-select: none;
-    pointer-events: none;
+    pointer-events: none
 }
 
-/* LOGO ANİMASYONU */
 .custom-studio-logo-bunny {
     top: 16.34%;
     left: 16.88%;
@@ -69,15 +65,14 @@ html {
     z-index: 25;
     cursor: pointer;
     pointer-events: auto !important;
-    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.6s ease;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.6s ease
 }
 
 .custom-studio-logo-bunny:hover {
     transform: scale(1.03) translateY(-3px);
-    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.3))
 }
 
-/* HAKKIMIZDA YAZISI */
 .custom-studio-about-text {
     top: 22.50%;
     left: 35.98%;
@@ -89,7 +84,7 @@ html {
     line-height: 1.2;
     text-align: left;
     user-select: none;
-    pointer-events: none;
+    pointer-events: none
 }
 
 .custom-studio-team-header {
@@ -98,7 +93,7 @@ html {
     width: 32.34%;
     z-index: 39;
     user-select: none;
-    pointer-events: none;
+    pointer-events: none
 }
 
 .custom-studio-upcoming-text {
@@ -107,10 +102,9 @@ html {
     width: 4.27%;
     z-index: 34;
     user-select: none;
-    pointer-events: none;
+    pointer-events: none
 }
 
-/* EKİP ÜYELERİ ANİMASYONU */
 .custom-studio-team-member-1,
 .custom-studio-team-member-2,
 .custom-studio-team-member-3,
@@ -120,41 +114,41 @@ html {
     pointer-events: auto !important;
     transition: transform 0.2s ease-in-out, filter 0.2s ease;
     transform-origin: center center;
-    z-index: 38;
+    z-index: 38
 }
 
 .custom-studio-team-member-1 {
     top: 15.54%;
     left: 58.85%;
-    width: 10.42%;
+    width: 10.42%
 }
 
 .custom-studio-team-member-2 {
     top: 15.06%;
     left: 70.26%;
     width: 10.36%;
-    z-index: 37;
+    z-index: 37
 }
 
 .custom-studio-team-member-3 {
     top: 27.71%;
     left: 59.38%;
     width: 10.42%;
-    z-index: 36;
+    z-index: 36
 }
 
 .custom-studio-team-member-4 {
     top: 15.06%;
     left: 70.26%;
     width: 10.36%;
-    z-index: 37;
+    z-index: 37
 }
 
 .custom-studio-team-member-5 {
     top: 27.43%;
     left: 70.94%;
     width: 10.57%;
-    z-index: 35;
+    z-index: 35
 }
 
 .custom-studio-team-member-1:hover,
@@ -164,34 +158,39 @@ html {
 .custom-studio-team-member-5:hover {
     transform: scale(1.05) rotate(-2deg);
     filter: brightness(1.1);
-    z-index: 50 !important;
+    z-index: 50 !important
 }
 
-/* ZARF SABİT KALIYOR */
 .custom-studio-red-envelope {
     top: 44.24%;
     left: 40.36%;
     width: 22.60%;
     z-index: 33;
-    user-select: none;
-    pointer-events: none;
+    cursor: pointer;
+    pointer-events: auto !important;
+    transition: transform 0.3s ease, filter 0.3s ease
 }
 
-/* KART/YAZI İÇİN ANİMASYON (Zarfın İçindeki Mektup öne çıkar) */
+.custom-studio-red-envelope:hover {
+    transform: scale(1.02) rotate(-1deg);
+    filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.4));
+    z-index: 50 !important
+}
+
 .custom-studio-card-inner {
     top: 58.74%;
     left: 41.04%;
     width: 20.52%;
     z-index: 32;
-    cursor: help;
+    cursor: pointer;
     pointer-events: auto !important;
-    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.4s ease;
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.4s ease
 }
 
 .custom-studio-card-inner:hover {
     z-index: 1000 !important;
     transform: scale(1.1) translateY(-15px) rotate(2deg);
-    filter: sepia(1) hue-rotate(-50deg) saturate(3) contrast(1.2) drop-shadow(0 20px 40px rgba(100, 0, 0, 0.6));
+    filter: sepia(1) hue-rotate(-50deg) saturate(3) contrast(1.2) drop-shadow(0 20px 40px rgba(100, 0, 0, 0.6))
 }
 
 .custom-studio-star-deco {
@@ -200,38 +199,37 @@ html {
     width: 41.35%;
     z-index: 24;
     user-select: none;
-    pointer-events: none;
+    pointer-events: none
 }
 
-/* STEAM, X (BOOKMARK) ANİMASYONLARI (Aşağıya Kayma) */
 .custom-studio-bookmark-steam,
 .custom-studio-bookmark-x {
     cursor: pointer;
     pointer-events: auto !important;
-    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1)
 }
 
 .custom-studio-bookmark-steam {
     top: 14.92%;
     left: 37.76%;
     width: 6.20%;
-    z-index: 23;
+    z-index: 23
 }
 
 .custom-studio-bookmark-x {
     top: 14.97%;
     left: 45.62%;
     width: 6.20%;
-    z-index: 20;
+    z-index: 20
 }
 
 .custom-studio-bookmark-steam:hover,
 .custom-studio-bookmark-x:hover {
-    transform: translateY(20px);
+    transform: translateY(20px)
 }
 
 .custom-studio-bookmark-steam:active,
 .custom-studio-bookmark-x:active {
     transform: translateY(25px) scale(0.98) !important;
-    transition-duration: 0.1s;
+    transition-duration: 0.1s
 }
